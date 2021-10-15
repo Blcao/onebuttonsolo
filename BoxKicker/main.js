@@ -54,6 +54,9 @@ function update() {
     else {
     addScore(1);
     play("explosion");
+    times(3, (i) => {
+      particle(boot.pos, 4, 2, PI, .5);
+    });
     while (boot.pos.x > 20) {
       boot.pos.x -= 5;
     }
