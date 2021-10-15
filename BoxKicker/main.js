@@ -39,6 +39,8 @@ function update() {
 
   if (!ticks) {
     boot.pos.x = 20;
+    char("a", boot.pos);
+    concrete = false;
   }
   if (input.isJustPressed) {
     while (boot.pos.x < 50) {
